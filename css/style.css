@@ -27,9 +27,11 @@ nav{
 }
 
 .left {
-    background: #73505b;
+    background: transparent;
     padding: 3px;
     border-radius: 4px;
+    color: black;
+    font-size: 1.5rem;
 }
 
 nav ul li{
