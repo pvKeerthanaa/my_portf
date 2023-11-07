@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff ;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 40px 10%; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.left {
+    background: #73505b;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:  #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after{
+    width:100%
+}
+
+.desc{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.desc h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.desc h1 span{
+    color: darksalmon ;
+}
+
+/*abou*/
+
+#about{
+    padding: 80px 0;
+    color: #ababab ;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.abcol1{
+    flex-basis: 35%;
+}
+
+.abcol1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.abcol2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.t1{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.t1::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.t1.active-link::after{
+    width: 50%;
+
+}
+
+.tabcontent ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tabcontent ul li span{
+    color: #b54769;
+    font-size: 14px;
+} 
+
+.tabcontent{
+    display: none;
+}
+
+.tabcontent.active-tab{
+    display: block;
+}
+
+/**/
+
+#portfolio{
+    padding: 30px 0;
+    color: #ababab ;
+    background-image: url(/images/p2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitl{
+    font-size: 60px;
+    font-weight: 600;
+    color:#875464;
+    text-align: center;
+}
+
+.portcon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #4f3838;
+}
+
+.cool{
+    padding: 0 0 0 230px;
+}
+
+.proj{
+    padding-right: 1px;
+}
+
+.skil{
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.skil::after{
+    content:'';
+    width:16%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.cool p{
+    margin: 30px 0 20px 0;
+    font-size: 20px;
+}
+
+.cool span{
+    color:#210f14;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.pr{
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pr::after{
+    content:'';
+    width:16%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.ind{
+    margin: 30px 0 20px 0;
+    font-size: 22px;
+}
+
+.prodes{
+    font-size: 20px;
+}
+
+.proj ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.social{
+    margin-top: 30px;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+/*  */
+
+.conleft{
+    flex-basis: 35%;
+}
+
+.conright{
+    flex-basis: 60%;
+}
+
+.conleft p{
+    margin-top: 30px;
+}
+
+.conleft p i{
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #b54769;
+    height: 40px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    color: black;
+}
+
+.conright form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*small screen*/
+
+@media only screen and(max-width: 600px)
+{
+    #header{
+        background-image: url(/images/i1.jpg);
+    }
+}

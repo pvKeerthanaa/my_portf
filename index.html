@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="fav.png" type="image/x-icon" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/aee497bce9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="left">P V Keerthana</div>
+                <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+            <div class="desc">
+                <h1 class="hero_title">Hi, it's me <span>Keerthana</span></h1>
+                <p class="hero_desc">I am a technology enthusiast and<br> ambitious engineering student with a
+                    <br>passion to do something innovative </p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abcol1">
+                    <img src="/images/p1.jpg">
+                </div>
+                <div class="abcol2">
+                    <h1 class="subtitle">About Me</h1>
+                
+                    <div class="tab">
+                        <p class="t1 active-link" onclick="opentab('Education')">Education</p>
+                        <p class="t1" onclick="opentab('Experience')">Experience</p>
+                        <p class="t1" onclick="opentab('Achievements')">Achievements</p>
+                    </div>
+                    <div class="tabcontent active-tab" id="Education">
+                        <ul>
+                            <li><span>FISAT (2020-2024)</span><br>Bachelor of Technology - 9.43 CGPA</li>
+                            <li><span>K V Pushp Vihar (2009-2019)</span><br>Secondary Education - 10 CGPA <br>
+                                Higher Secondary Education - 94.2%</li>    
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="Experience">
+                        <ul>
+                            <li><span>Intern</span><br>Sinergia Media Labs - Simelabs<br>HTML5, CSS, basic JavaScript</li>
+                            <li><span>Intern</span><br>IOS App Development<br>
+                                Consolidated Techware pvt ltd  <br></li> 
+                            <li><span>Secretary</span><br>ACM Student Chapter FISAT</li>       
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="Achievements">
+                        <ul>
+                            <li><span>SHINOY GEORGE MEMORIAL AWARD
+                            </span><br>Best performer in Mathematics</li>
+                            <li><span>RAJYA PURASKAR</span><br>Bharath Scouts and Guides<br></li> 
+                            <li><span>STUDENT OF THE YEAR AWARD</span><br>School - Academic year 2016-2017</li>    
+                            <li><span>NPTEL CERTIFICATION</span><br>Programming in JAVA</li> 
+                            <li><span>MEMBER OF FISAT MUSIC CULT</span><br>Was part of concerts conducted by the college
+                                </li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitl">My Portfolio</h1>
+            <div class="portcon">
+                <div class="cool">
+                    <h2 class="skil">Skills</h2>
+                    <p>Here are some of my skills:</p>
+                    <span id="element"></span>
+                </div>
+                <div class="proj">
+                    <h2 class="pr">My Projects</h2>
+                    <ul>
+                        <li>
+                        <p class="ind">Industry Project</p>
+                        <p class="prodes">in progress<br>This project is dedicated to improving the safety and<br> quality of
+                            shipping, ship-building, ship-repairing, and<br> offshore floating
+                            systems.<br>
+                            FRAMEWORK - DRUPAL</p>
+                        </li>    
+                        <li>    
+                            <p class="ind">Simple landing page created using HTML5 & CSS.<p>
+                            <a href="https://pvkeerthanaa.github.io/Yellow_Kitchen/">Click here for YellowKitchen</a><br>
+                            <a href="https://pvkeerthanaa.github.io/jadoo/">Click here for Jadoo</a>
+                        </li>    
+                    </ul>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="conleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> keerthanapv2001@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9999598006</p>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images/PVKeerthana.FISAT.pdf" download class="btn btn2">Download Resume</a> 
+                </div>
+                <div class="conright">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Keerthana</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tl = document.getElementsByClassName("t1");
+        var tc = document.getElementsByClassName("tabcontent");
+        function opentab(tn){
+
+            for(tlink of tl){
+                tlink.classList.remove("active-link");
+            }
+            for(tcont of tc){
+                tcont.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tn).classList.add("active-tab");
+
+        }
+
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Basic knowledge in C, Python, Java, SQL', 'HTML5, CSS, Basic Javascript', 'Basic knowledge of Drupal','Fluent in English, Hindi, Malayalam','Team Player','Leadership','Volunteering'],
+          typeSpeed: 50,
+          loop: true
+        });
+      </script>
+</body>
+</html>
